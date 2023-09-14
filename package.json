@@ -9,6 +9,7 @@
   ],
   "repository": {
     "type": "git",
+    "branch": "lib-js",
     "directory": "./src/useNotificantionToast.jsx",
     "url": "https://www.github.com/AmirWorkplace/react-notificantion-toast.git"
   },
