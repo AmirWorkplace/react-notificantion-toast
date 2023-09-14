@@ -1,19 +1,21 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import useNotificantionToast from 'react-notificantion-toast';
+import useNotificantionToast from './components';
 
 function App() {
   const [count, setCount] = useState(0);
   const [active, Toast] = useNotificantionToast(100000);
 
   return (
-    <>
-      <Toast type="success" text="How are you!" />
+    <div>
+      <Toast
+        type="success"
+        text="Number(process && process.env.NOTIFICANTION_TOAST_DURATION)"
+      />
 
       <button onClick={() => active((prevState) => !prevState)}>
-        <img src={reactLogo} className="logo react" alt="React logo" />
+        sjkfgsdf
       </button>
-    </>
+    </div>
   );
 }
 
