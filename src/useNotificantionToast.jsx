@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react';
 import assets from './assets';
 import styles from './assets/style.module.css';
 
-const NotificantionToast = (duration) => {
+const useNotificantionToast = (duration) => {
   let timeout = null;
   const [isToastActive, setIsToastActive] = useState(false);
 
   const progressDuration =
     Number(duration) ||
-    Number(process.env.NOTIFICANTION_TOAST_DURATION) ||
+    // Number(process && process.env.NOTIFICANTION_TOAST_DURATION) ||
     Number(import.meta.env.VITE_NOTIFICANTION_TOAST_DURATION) ||
     5000;
 
@@ -18,11 +18,11 @@ const NotificantionToast = (duration) => {
     }, progressDuration);
 
     return () => clearTimeout(timeout);
-  }, [progressDuration]);
+  }, [isToastActive, progressDuration]);
 
   function closeToastHandler() {
     setIsToastActive(false);
-    return () => clearTimeout(timeout);
+    clearTimeout(timeout);
   }
 
   const rootColor = {
@@ -67,7 +67,7 @@ const NotificantionToast = (duration) => {
     },
   };
 
-  const NotificantionContainer = ([type, text]) =>
+  const NotificantionContainer = ({ type, text }) =>
     isToastActive && (
       <section>
         <div className={styles.container} style={rootColor[type]}>
@@ -102,57 +102,4 @@ const NotificantionToast = (duration) => {
   return [setIsToastActive, NotificantionContainer];
 };
 
-export default NotificantionToast;
-
-/* import { CSSProperties } from 'react';
-import assets from './assets';
-import styles from './assets/style.module.css';
-// typeof import('*.module.css');
-
-/* type AppType = {
-  '--animation-duration': string;
-};
- * /
-// interface {
-//   children
-// }
-
-// type root = {
-//   // rootColor: Object
-//   '--success-toast': CSSProperties;
-//   success: Object;
-// };
-export default function NotificantionToast() {
-  return (
-    <section>
-      <div className={styles.container + ' ' + styles.success}>
-        <div className={styles.box}>
-          <div className={styles.leftBorder}></div>
-          <div className={styles.leftIcon}>
-            <p className={styles.picture}>
-              {assets.svg['success']({ width: 28, height: 28 })}
-            </p>
-          </div>
-          <p className={styles.messageType}>success</p>
-          <div className={styles.notificantionBox}>
-            Your Data updated successfully
-          </div>
-          <div className={styles.rightIcon}>
-            <p className={styles.picture}>
-              {assets.svg['close']({ width: 20, height: 20 })}
-            </p>
-          </div>
-        </div>
-
-        <div className={styles.progressBox}>
-          <div
-            className={styles.progressBar}
-            style={{ '--animation-duration': '5s' }  }
-          ></div>
-        </div>
-      </div>
-      <div className="hidden bg-slate-300"></div>
-    </section>
-  );
-}
- */
+export default useNotificantionToast;

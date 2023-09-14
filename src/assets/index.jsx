@@ -1,11 +1,11 @@
-type svgType = {
-  width: number;
-  height: number;
-};
+// type svgType = {
+//   width: number;
+//   height: number;
+// };
 
 export default {
   svg: {
-    success: ({ width, height }: svgType) => (
+    success: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -16,7 +16,7 @@ export default {
       </svg>
     ),
 
-    close: ({ width, height }: svgType) => (
+    close: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -27,7 +27,7 @@ export default {
       </svg>
     ),
 
-    danger: ({ width, height }: svgType) => (
+    danger: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -38,7 +38,7 @@ export default {
       </svg>
     ),
 
-    warning: ({ width, height }: svgType) => (
+    warning: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -49,7 +49,7 @@ export default {
       </svg>
     ),
 
-    primary: ({ width, height }: svgType) => (
+    primary: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -60,7 +60,7 @@ export default {
       </svg>
     ),
 
-    download: ({ width, height }: svgType) => (
+    download: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -71,7 +71,7 @@ export default {
       </svg>
     ),
 
-    normal: ({ width, height }: svgType) => (
+    normal: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -82,7 +82,7 @@ export default {
       </svg>
     ),
 
-    info: ({ width, height }: svgType) => (
+    info: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -93,7 +93,7 @@ export default {
       </svg>
     ),
 
-    dark: ({ width, height }: svgType) => (
+    dark: ({ width, height }) => (
       <svg
         width={width}
         height={height}
@@ -103,5 +103,5 @@ export default {
         <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
       </svg>
     ),
-  } as any,
+  },
 };

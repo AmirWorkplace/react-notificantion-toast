@@ -1,7 +1,19 @@
 {
-  "name": "npm-nitify-lib",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-notificantion-toast",
+  "keywords": [
+    "notificantion",
+    "notificantion-toast",
+    "react-notificantion-toast",
+    "toast",
+    "progress-bar-toast"
+  ],
+  "repository": {
+    "type": "git",
+    "directory": "./src/useNotificantionToast.jsx",
+    "url": "https://www.github.com/AmirWorkplace/react-notificantion-toast.git"
+  },
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -25,7 +37,6 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.0.2",
     "vite": "^4.4.5"
   }
 }
