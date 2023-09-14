@@ -1,3 +1,2 @@
-import useNotificantionToast from './src/useNotificantionToast';
-
-export default useNotificantionToast;
+const useNotificantionToast = require('./src/useNotificantionToast');
+module.exports = useNotificantionToast;

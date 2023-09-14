@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import assets from './assets';
 import styles from './assets/style.module.css';
 
@@ -73,7 +73,12 @@ const useNotificantionToast = (duration) => {
         <div className={styles.container} style={rootColor[type]}>
           <div className={styles.box}>
             <div className={styles.leftBorder}></div>
-            <div className={styles.leftIcon}>
+            <div
+              className={styles.leftIcon}
+              style={{
+                '--animation-duration': progressDuration + 'ms',
+              }}
+            >
               <p className={styles.picture}>
                 {assets.svg[type]({ width: 26, height: 26 })}
               </p>
