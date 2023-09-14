@@ -1,5 +1,6 @@
 {
   "name": "react-notificantion-toast",
+  "homepage": "https://www.syedamirali.com",
   "keywords": [
     "notificantion",
     "notificantion-toast",
@@ -7,6 +8,7 @@
     "toast",
     "progress-bar-toast"
   ],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "branch": "lib-js",
@@ -14,7 +16,7 @@
     "url": "https://www.github.com/AmirWorkplace/react-notificantion-toast.git"
   },
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",

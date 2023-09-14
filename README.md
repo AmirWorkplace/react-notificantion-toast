@@ -46,7 +46,7 @@ pnpm install react-notificantion-toast
 ## How to use in react.js
 
 - First import useNotificantion hook from `react-notificantion-toast` your npm library
-- Then initialize it and set a duration of this notificantion visibility for milliseconds, if you're not initialized it such as[`useNotificantionToast(50000)`], then it take it's default value which are `5000` like 5000ms or 5 seconds.
+- Then initialize it and set a duration of this notificantion visibility for milliseconds, if you're not initialized it such as `useNotificantionToast(50000)`, then it take it's default value which are `5000` like 5000ms or 5 seconds.
 - Or you can use a `.env`'s local variable for initialized this notificantion toast duration's value.
 - When you call `const [active, Toast] = useNotificantionToast()` this function you got two returning variable which one notificantion toast activator function and other one is notificantion toast component which receive tow attributes of parameter `type` & `text` this two are takes definitely a string value.
 - The `type` is receive some specific type of string which are indicate this notificantion's type.
@@ -55,7 +55,7 @@ pnpm install react-notificantion-toast
 - All the message types are available on that present version are ----
 
 ```
-["success", ""danger, "warning", "primary", "download", "normal", "info", "dark"]
+["success", "danger", "warning", "primary", "download", "normal", "info", "dark"]
 ```
 
 ```.env
@@ -96,3 +96,4 @@ export default function App() {
 - Please give an github star, If it's really helpful for you!
 - Support me on [SYED AMIR ALI](https://www.syedamirali.com)
 - Thanks in advance & stay safe and keep safe.
+- [NPM](https://registry.npmjs.org/react-notificantion-toast@1.0.0)
