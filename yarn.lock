@@ -1340,12 +1340,13 @@ react-dom@^18.2.0:
     scheduler "^0.23.0"
 
 react-notificantion-toast@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-notificantion-toast/-/react-notificantion-toast-1.0.1.tgz#06b6b75305c44a9b8be3caaf7e59784a10bb8857"
-  integrity sha512-njJlPPPjyGKnrSytOUSVW71+NIRv2GWBXqBqHwImy75bp5UhR2j8NI0lwyLdBbL/pKFXMSYjNu6VBlla3frjxg==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-notificantion-toast/-/react-notificantion-toast-1.0.2.tgz#f0009080bddfc1103d33456e72b9d9d46952dd33"
+  integrity sha512-vL4VqkAVTaZwZXonhR5gOJd9KzGai2eibuzgSJofIJWUCR7WFzgWZrRvVHT1P/sT/weP4iCSc2AXtgQKmb7iCQ==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
+    react-notificantion-toast "^1.0.1"
 
 react@^18.2.0:
   version "18.2.0"

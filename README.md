@@ -97,3 +97,7 @@ export default function App() {
 - Support me on [SYED AMIR ALI](https://www.syedamirali.com)
 - Thanks in advance & stay safe and keep safe.
 - [NPM](https://registry.npmjs.org/react-notificantion-toast@1.0.0)
+
+<!--
+git add . && git commit -m "Done to write docs." && git push origin lib-js && npm publish
+ -->
