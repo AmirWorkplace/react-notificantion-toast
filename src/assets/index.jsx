@@ -1,7 +1,4 @@
-// type svgType = {
-//   width: number;
-//   height: number;
-// };
+import React from 'react';
 
 export default {
   svg: {
