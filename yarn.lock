@@ -1339,10 +1339,10 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-notificantion-toast@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-notificantion-toast/-/react-notificantion-toast-1.0.2.tgz#f0009080bddfc1103d33456e72b9d9d46952dd33"
-  integrity sha512-vL4VqkAVTaZwZXonhR5gOJd9KzGai2eibuzgSJofIJWUCR7WFzgWZrRvVHT1P/sT/weP4iCSc2AXtgQKmb7iCQ==
+react-notificantion-toast@^1.0.1, react-notificantion-toast@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-notificantion-toast/-/react-notificantion-toast-1.0.3.tgz#c16b845136c7dd85814a6ff57e906cd646a69b43"
+  integrity sha512-HOxVP67SmEXeGhuQHXbuOgdO2zudSsuCGgyfXnpZ3bNP7fn70CMmCsiKQcNJaeBBu2T9/DTgL+8HySIZjmEoQA==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"

@@ -16,7 +16,7 @@
     "url": "https://www.github.com/AmirWorkplace/react-notificantion-toast.git"
   },
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.5",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -27,7 +27,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-notificantion-toast": "^1.0.1"
+    "react-notificantion-toast": "^1.0.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
